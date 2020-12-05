@@ -5,13 +5,10 @@ use std::{collections::HashSet, fs::File};
 
 fn read_input() -> HashSet<i32> {
     let f = File::open("src/input.txt").expect("Failed to read input file!");
-    let f = BufReader::new(f);
-
-    return f.lines().fold(HashSet::new(), |mut acc, line| {
-        let value: i32 = line.unwrap().parse().unwrap();
-        acc.insert(value);
-        acc
-    });
+    return BufReader::new(f)
+        .lines()
+        .map(|x| x.unwrap().parse().unwrap())
+        .collect();
 }
 
 fn part1() -> i32 {
