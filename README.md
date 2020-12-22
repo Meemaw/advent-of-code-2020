@@ -5,3 +5,4 @@
 
 - [x] [Day 1: Report Repair](day-1/src/main.rs)
 - [x] [Day 2: Password Philosophy](day-2/src/main.rs)
+- [x] [Day 3: Toboggan Trajectory](day-3/src/main.rs)
