@@ -12,15 +12,11 @@ struct PasswordPolicy {
 fn parse_password_policy(s: String) -> PasswordPolicy {
   let split: Vec<&str> = s.split(" ").collect();
   let indices: Vec<&str> = split[0].split("-").collect();
-  let i1: usize = indices[0].parse().unwrap();
-  let i2: usize = indices[1].parse().unwrap();
-  let value = split[1].chars().next().unwrap();
-  let password = split[2];
   return PasswordPolicy {
-    password: String::from(password),
-    value,
-    i1,
-    i2,
+    password: String::from(split[2]),
+    value: split[1].chars().next().unwrap(),
+    i1: indices[0].parse().unwrap(),
+    i2: indices[1].parse().unwrap(),
   };
 }
 
