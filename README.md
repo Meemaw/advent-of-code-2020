@@ -4,3 +4,4 @@
 [![codecov](https://codecov.io/gh/Meemaw/advent-of-code-2020/branch/main/graph/badge.svg?token=8QPD6MQA2V)](https://codecov.io/gh/Meemaw/advent-of-code-2020)
 
 - [x] [Day 1: Report Repair](day-1/src/main.rs)
+- [x] [Day 2: Password Philosophy](day-2/src/main.rs)
